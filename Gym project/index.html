@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utkarsh Gym </title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body{
+        font-family: 'Indie Flower', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("Img/Background.jpg");
+        height: 233223;
+    }
+    .left{
+        display:inline-block ;
+        /* border:2px solid red; */
+        position: absolute;
+        left: 34px;
+
+
+    }
+    .mid{
+        display: block;
+        width: 30%;
+        margin:15px auto;
+        /* border:2px solid yellow; */
+        font-size: 35px;
+
+    }
+    .right{
+        position: absolute;
+        right:32px;
+        top: 15px;
+        display: inline-block;
+        /* border:2px solid purple; */
+
+    }
+
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 14px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 38px ,23px;
+
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+
+    }
+    .left img{
+        width:123px;
+        filter: invert(100%);
+    }
+    .left div{
+        text-align: center;
+    }
+    .btn{
+        font-family: 'Indie Flower', cursive;
+        margin: 0px,9px;
+        background-color: black;
+        color:white;
+        padding: 4px, 13px;
+        border: 2px, solid;
+        border-radius:10 px;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+    .btn :hover{
+        background-color: rgb(31,30,30);
+        }
+
+    .container{
+        border: 2px solid;
+        
+        margin: 72px 57px;
+        padding: 34px 42px;
+        border-radius: 32px;
+        width:56%;
+    }
+    .groupform input{
+        font-family: 'Indie Flower', cursive;
+        text-align: center;
+        padding: 6px;
+        width: 650px;
+        margin: 7px auto;
+        border-radius: 10px;
+        font-size: 18px;
+
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 63px;
+        margin:10px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        
+        <!-- logo -->
+        <div class="left"> 
+            <img src="img/logo.jpg" alt="">
+            <div>Muscle Mania</div>
+           
+        
+        </div>
+        <!-- navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home </a> </li>
+                <li><a href="#">About our price </a>  </li>
+                <li><a href="#">  Calorie Calculator </a></li>
+                <li><a href="#"> Phone No </a></li>
+            </ul>
+        
+        </div>
+
+        <!-- button -->
+        <div class="right">
+
+            <button class="btn">Call us now </button>
+            <button class="btn"> Email Us</button>
+        
+        </div>
+    </header>
+    <div class="container">
+        <h1>Why to Wait join early the best gym of Mumbai </h1>
+        <form action="no.php">
+            <div class="groupform">
+                <input type="text" name="" placeholder="Enter your name ">
+                <input type="text" name="" placeholder="Enter your address ">
+                <input type="text" name="" placeholder="Enter your mail id ">
+                <button class="sumit">Submit</button>
+            </div>
+    
+        </form>
+    </div>
+    
+
+    
+</body>
+</html>

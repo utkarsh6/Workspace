@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        :root{
+            --box-color:blue;
+        }
+        .box{
+            /* this is local variable */
+            --box-color: blue;
+            width: 200px;
+            height: 200px;
+            background-color:var(--box-color);
+            border: solid red 2px;
+            box-shadow:3px 3px var(--box-color);
+            margin: 2px  9px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        this is async
+    </div>
+    <h4>students</h4>
+    <ul id="students">
+
+    </ul>
+    <!-- callbacks -->
+    <script>
+    //     function one(){
+    //     console.log("one");
+    // }
+    // function two(){
+    //     console.log("two");
+    // }
+    // one();
+    // two();
+    const students=[
+        {name:"Utkarsh",subject:"JS"},
+        {name: "Rohit", subject:"ML"}
+    ]
+    function enrollStudents(student,callback){
+        setTimeout(function(){
+            students.push(student);
+            console.log("student is enrolled");
+            callback();
+        },3000);
+    }
+    function getStudents(){
+        setTimeout(function(){
+            let str="";
+            students.forEach(function(student){
+                str += `<li> ${student.name} </li>`
+            })
+            document.getElementById('students').innerHTML=str;
+        },1000);
+
+    }
+    let newStudents={name:"Sunny",subject:"Java"};
+    enrollStudents(newStudents,getStudents);
+    // getStudents();
+
+    </script>
+    
+    
+</body>
+</html>

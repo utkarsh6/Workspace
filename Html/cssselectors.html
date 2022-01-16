@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSSelectors</title>
+    <style>
+        /* div li  p{
+            color: yellow;
+            background-color: blue;
+        } */
+        /* div >p{
+            color:yellow;
+        } */
+        div +p{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is a div paragraph</p></li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is an container</p>
+    </div>
+    <p>This is a another paragraph </p>
+    
+</body>
+</html>

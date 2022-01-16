@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow </title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: solid 2px red; */
+            background-color: burlywood;
+            /* box-shadow: 10px 13px greenyellow; */
+            /* blur radius is 3rd property  */
+            /* boxshadow offset x , y color  */
+            box-shadow: -10px 13px 23px greenyellow;
+            /* spread radius  */
+            box-shadow: -10px 13px 23px 4px greenyellow;
+        }
+        .card h2{
+            text-shadow:3px 4px gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2> Card1 </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste facere porro dolor culpa, consequuntur
+                voluptatibus voluptates, esse reprehenderit excepturi maxime, earum tenetur corporis asperiores est
+                provident quis minima distinctio! Commodi culpa perferendis fuga beatae.</p>
+
+        </div>
+        <div class="card" id="car-2">
+
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, ab magnam sunt doloribus, cum
+                architecto odit totam consequatur inventore dolor, non quod voluptate obcaecati voluptatum iste. Non
+                libero expedita pariatur explicabo, hic perspiciatis ex.</p>
+        </div>
+        <div class="card" id="car-3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, nulla error ab pariatur dolores id
+                voluptas excepturi est? Vitae dolore nihil eligendi facere aut exercitationem nostrum modi distinctio!
+                Quisquam at vero maxime quo blanditiis.</p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo before and after selector</title>
+    <style>
+        header::before{
+            content: "";
+            background:url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left:0;
+            opacity: 0.5;
+            width: 100%;
+            height: 100%;
+            /* content is hidden now we will use z-index */
+            z-index: -1;
+
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+          
+        }
+
+        .navigation {
+            font-size: 20px;
+            display: flex;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        section {
+            margin: 3px 3px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* section::after{
+            content: "this is a content";
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contactors</li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <h1> welcome to coding </h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolore quaerat minima id maiores ex eius quia
+            error nam! Vel voluptatem sed dicta maxime. Ullam, numquam. Modi cupiditate nisi, a odio tempora esse sint!
+        </p>
+    </section>
+    <hr>
+
+</body>
+
+</html>

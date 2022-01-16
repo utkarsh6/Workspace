@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        this is loop 
+    </div>
+    <script>
+        console.log("This is video");
+        let a=["ut1","ut2","ut3"];
+        // for (let index = 0; index < a.length; index++) {
+        //     console.log(a[index]);
+
+        // a.forEach(function f(element) {
+        //     console.log(a);
+
+        // })
+        for(element of a){
+            console.log(a)
+
+        }
+
+        //to iterate the object 
+        let employee={
+            name: "Utkarsh",
+            salry:"2l",
+            channel:"ut"
+        }
+        for( key in employee){
+            console.log(`${key} of employee is ${employee[key]}`);
+        }
+            
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        This is div
+    </div>
+    <script>
+        // function greet(){
+        //     console.log("This is arrow");
+        // }
+        // greet();
+        // this is arrow function 
+        greet= ()=> {
+            console.log("this is arrow");
+        }
+        greet();
+        setTimeout(()=>{
+            console.log("This is shortcut for setimeout ");
+        },2000);
+        let sum =(a,b) =>{
+            return(a+b);
+        }
+       console.log(sum(34,3));
+       
+       let sum2= (a,b)=>a+b;
+
+       let obj={
+           greet:"Good Morning",
+           names:["Utkarsh","Rohit","Ram"],
+           //speak is the function
+           speak(){
+               this.names.forEach((student)=>{
+                   console.log(this.greet + "Hello:"+ student);
+
+               });
+               
+
+           }
+       }
+       obj.speak();
+    </script>
+    
+</body>
+</html>
